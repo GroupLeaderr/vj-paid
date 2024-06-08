@@ -1138,29 +1138,6 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("🥶 Cʜᴏᴏsᴇ Sᴇᴀsᴏɴ 🥶", callback_data=f"seasons#{key}")
         ]
     )
-
-        else:
-            btn.insert(0, 
-                [
-            InlineKeyboardButton("‼️ Cʜᴏᴏsᴇ ʟᴀɴɢᴜᴀɢᴇ ‼️", callback_data=f"languages#{key}"),
-        ]
-    )
-        btn.insert(1, 
-        [
-            InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-        ]
-    )
-        btn.insert(2, 
-        [
-            InlineKeyboardButton("🤡 ǫᴜᴀʟɪᴛɪᴇs ", callback_data=f"qualities#{key}"),
-            InlineKeyboardButton("🫨 ʏᴇᴀʀs ", callback_data=f"years#{key}"),
-        ]
-    )
-        btn.insert(3,
-        [
-            InlineKeyboardButton("🥶 Cʜᴏᴏsᴇ Sᴇᴀsᴏɴ 🥶", callback_data=f"seasons#{key}")
-        ]
-    )
                 
     except KeyError:
         await save_group_settings(query.message.chat.id, 'auto_delete', True)
