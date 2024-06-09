@@ -2081,9 +2081,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('💥 𝐀𝐛𝐨𝐮𝐭  🥀', callback_data='about')
                 ],[
                     InlineKeyboardButton('💰 𝐄𝐚𝐫𝐧 𝐌𝐨𝐧𝐞𝐲 𝐖𝐢𝐭𝐡 𝐁𝐨𝐭 💰', callback_data="shortlink_info")
-                  ],[
-                    InlineKeyboardButton('🚫  𝐃𝐌𝐂𝐀', url="https://telegra.ph/Contant-Removal"),
-                    InlineKeyboardButton('𝐅𝐨𝐫𝐬𝐞 𝐒𝐮𝐛 🚩', callback_data='forcesub')
                 ],[
                     InlineKeyboardButton('🔓 𝐆𝐄𝐓 𝐃𝐈𝐑𝐄𝐂𝐓 𝐌𝐎𝐕𝐈𝐄𝐒 🔓', callback_data='subscription')
                 ]]
@@ -2098,9 +2095,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('💥 𝐀𝐛𝐨𝐮𝐭  🥀', callback_data='about')
                 ],[
                     InlineKeyboardButton('💰 𝐄𝐚𝐫𝐧 𝐌𝐨𝐧𝐞𝐲 𝐖𝐢𝐭𝐡 𝐁𝐨𝐭 💰', callback_data="shortlink_info")
-                  ],[
-                    InlineKeyboardButton('🚫  𝐃𝐌𝐂𝐀', url="https://telegra.ph/Contant-Removal"),
-                    InlineKeyboardButton('𝐅𝐨𝐫𝐬𝐞 𝐒𝐮𝐛 🚩', callback_data='forcesub')
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
