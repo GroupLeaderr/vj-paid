@@ -207,9 +207,10 @@ Nᴀᴍᴇ - {}"""
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}
+    CAPTION = """<b><a href="https://t.me/AutofilterV01_bot">{file_name}
 
-<b> Size ⚙️: {file_size}</b>""" 
+sɪᴢᴇ : {file_size}
+Pʟᴇᴀsᴇ Fᴏʀᴡᴀʀᴅ Tʜɪs Fɪʟᴇ</a></b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
