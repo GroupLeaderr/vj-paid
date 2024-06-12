@@ -143,12 +143,12 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 Gʀᴏᴜᴘ = {}(<code>{}</code>)
 Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs = <code>{}</code>
 Aᴅᴅᴇᴅ Bʏ - {}
-ʙᴏᴛ - @Autofilter_v2bot"""
+ʙᴏᴛ - @Tom_000bot"""
 
     LOG_TEXT_P = """#NewUser
 ID - <code>{}</code>
 Nᴀᴍᴇ - {}
-ʙᴏᴛ - @Autofilter_v2bot"""
+ʙᴏᴛ - @Tom_000bot"""
 
     ALRT_TXT = """ʜᴇʟʟᴏ {},
 ᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,
@@ -208,9 +208,11 @@ Nᴀᴍᴇ - {}
 𝗡𝗮𝗺𝗲 <b>: {}</b>
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>
+
+ʙᴏᴛ - <b>@Tom_000bot</b>
 """
 
-    CAPTION = """<b><a href="https://t.me/Autofilter_v2bot">{file_name}
+    CAPTION = """<b><a href="https://t.me/Tom_000bot">{file_name}
 
 sɪᴢᴇ : {file_size}
 Pʟᴇᴀsᴇ Fᴏʀᴡᴀʀᴅ Tʜɪs Fɪʟᴇ</a></b>""" 
