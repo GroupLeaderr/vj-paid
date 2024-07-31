@@ -240,7 +240,20 @@ class Database:
         expiry_time = datetime.datetime.now() + datetime.timedelta(seconds=seconds)
         user_data = {"id": user_id, "expiry_time": expiry_time, "has_free_trial": True}
         await self.users.update_one({"id": user_id}, {"$set": user_data}, upsert=True)
-    
+
+    # Free Trail Remove Logic By NBBotz
+    async def reset_free_trial(self, user_id=None):
+        if user_id is None:
+            # Reset for all users
+            update_data = {"$set": {"has_free_trial": False}}
+            result = await self.users.update_many({}, update_data)  # Empty query to match all users
+            return result.modified_count
+        else:
+            # Reset for a specific user
+            update_data = {"$set": {"has_free_trial": False}}
+            result = await self.users.update_one({"id": user_id}, update_data)
+            return 1 if result.modified_count > 0 else 0  # Return 1 if updated, 0 if not
+`
     
     async def all_premium_users(self):
         count = await self.users.count_documents({
