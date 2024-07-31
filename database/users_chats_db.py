@@ -253,7 +253,6 @@ class Database:
             update_data = {"$set": {"has_free_trial": False}}
             result = await self.users.update_one({"id": user_id}, update_data)
             return 1 if result.modified_count > 0 else 0  # Return 1 if updated, 0 if not
-`
     
     async def all_premium_users(self):
         count = await self.users.count_documents({
