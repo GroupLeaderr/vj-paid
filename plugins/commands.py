@@ -267,11 +267,23 @@ async def start(client, message):
                                                             InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)]])  # web stream Link
                     )
                 if STREAM_MODE == True:
-                    button = [[
-                    InlineKeyboardButton('➕ ADD ME TO YOUR GROUP ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true'),
-                ],[
-                    InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
-                ]]
+                    button = [
+                        [
+                        InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🚩', url=f'http://t.me/{temp.U_NAME}?startgroup=true'),
+                        ],
+                     [
+                        InlineKeyboardButton("🚀 Fast Download 🚀", url=download),                   
+                     ],
+                   
+                     [
+                        InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream),                  
+                     ],
+                        
+                     [
+                        InlineKeyboardButton("• ᴡᴀᴛᴄʜ ɪɴ ᴡᴇʙ ᴀᴘᴘ •", web_app=WebAppInfo(url=stream))  
+                     ]
+
+                    ]
                 else:
                     button = [[
                     InlineKeyboardButton('➕ ADD ME TO YOUR GROUP ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
@@ -455,11 +467,23 @@ async def start(client, message):
                     )
                     return
             if STREAM_MODE == True:
-                button = [[
-                    InlineKeyboardButton('➕ ADD ME TO YOUR GROUP ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true'),
-                ],[
-                    InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
-                ]]
+                button = [
+                        [
+                        InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🚩', url=f'http://t.me/{temp.U_NAME}?startgroup=true'),
+                        ],
+                     [
+                        InlineKeyboardButton("🚀 Fast Download 🚀", url=download),                   
+                     ],
+                   
+                     [
+                        InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream),                  
+                     ],
+                        
+                     [
+                        InlineKeyboardButton("• ᴡᴀᴛᴄʜ ɪɴ ᴡᴇʙ ᴀᴘᴘ •", web_app=WebAppInfo(url=stream))  
+                     ]
+
+                    ]
             else:
                 button = [[
                     InlineKeyboardButton('➕ ADD ME TO YOUR GROUP ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
@@ -522,11 +546,23 @@ async def start(client, message):
                     )
                     return
             if STREAM_MODE == True:
-                button = [[
-                    InlineKeyboardButton('➕ ADD ME TO YOUR GROUP ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true'),
-                ],[
-                    InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
-                ]]
+                button = [
+                        [
+                        InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🚩', url=f'http://t.me/{temp.U_NAME}?startgroup=true'),
+                        ],
+                     [
+                        InlineKeyboardButton("🚀 Fast Download 🚀", url=download),                   
+                     ],
+                   
+                     [
+                        InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream),                  
+                     ],
+                        
+                     [
+                        InlineKeyboardButton("• ᴡᴀᴛᴄʜ ɪɴ ᴡᴇʙ ᴀᴘᴘ •", web_app=WebAppInfo(url=stream))  
+                     ]
+
+                    ]
             else:
                 button = [[
                     InlineKeyboardButton('➕ ADD ME TO YOUR GROUP ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
@@ -588,11 +624,23 @@ async def start(client, message):
             )
             return
     if STREAM_MODE == True:
-        button = [[
-                    InlineKeyboardButton('➕ ADD ME TO YOUR GROUP ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true'),
-                ],[
-                    InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
-                ]]
+        button = [
+                [
+                InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🚩', url=f'http://t.me/{temp.U_NAME}?startgroup=true'),
+                ],
+             [
+                InlineKeyboardButton("🚀 Fast Download 🚀", url=download),                   
+             ],
+                   
+             [
+                InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream),                  
+             ],
+                        
+             [
+                InlineKeyboardButton("• ᴡᴀᴛᴄʜ ɪɴ ᴡᴇʙ ᴀᴘᴘ •", web_app=WebAppInfo(url=stream))  
+             ]
+
+            ]
     else:
         button = [[
                     InlineKeyboardButton('➕ ADD ME TO YOUR GROUP ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
@@ -1482,7 +1530,6 @@ async def check_plans_cmd(client, message):
         await message.reply_text(f"**Your plans details are :\n\nRemaining Time : {remaining_time}\n\nExpiry Time : {expiry_time}**")
     else:
         btn = [ 
-            [InlineKeyboardButton("ɢᴇᴛ ғʀᴇᴇ ᴛʀᴀɪʟ ғᴏʀ 𝟻 ᴍɪɴᴜᴛᴇꜱ ☺️", callback_data="get_trail")],
             [InlineKeyboardButton("ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅs", callback_data="buy_premium")],
             [InlineKeyboardButton("⚠️ ᴄʟᴏsᴇ / ᴅᴇʟᴇᴛᴇ ⚠️", callback_data="close_data")]
         ]
