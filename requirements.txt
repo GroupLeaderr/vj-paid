@@ -1,4 +1,4 @@
-pyrofork
+git+https://github.com/KurimuzonAkuma/pyrogram
 tgcrypto 
 requests 
 bs4 
