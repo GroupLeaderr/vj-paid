@@ -6,7 +6,7 @@ from pyrogram.errors import FloodWait
 from pyrogram.errors.exceptions.bad_request_400 import ChannelInvalid, ChatAdminRequired, UsernameInvalid, UsernameNotModified
 from info import INDEX_REQ_CHANNEL as LOG_CHANNEL
 from database.ia_filterdb import save_file
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ForceReply
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -80,47 +80,11 @@ async def send_for_index(bot, message):
     if k.empty:
         return await message.reply('This may be group and iam not a admin of the group.')
 
-    s = await message.reply_text(
-        text = "<b>Send the skip message number.\n\nIf dont want to skip any files send me 👉 0 \n</b>",
-        reply_to_message_id=message.id,
-        reply_markup=ForceReply(True)
-    )
-
-@Client.on_message(filters.private & filters.reply) 
-async def forceskip(client, message):      
-    reply_message = message.reply_to_message 
-    if (reply_message.reply_markup) and isinstance(reply_message.reply_markup, ForceReply):   
-        skip_msg = message
-        try:
-            skip = int(skip_msg.text)
-        except:
-            await message.reply("InValid Number provided using 0 as a skip number")
-            skip = 0
-        msg = await client.get_messages(message.chat.id, reply_message.id) 
-        info = msg.reply_to_message
-        if info.text:
-            regex = re.compile("(https://)?(t\.me/|telegram\.me/|telegram\.dog/)(c/)?(\d+|[a-zA-Z_0-9]+)/(\d+)$")
-            match = regex.match(info.text)
-            if not match:
-                return await info.reply('Invalid link')
-            chat_id = match.group(4)
-            last_msg_id = int(match.group(5))
-            if chat_id.isnumeric():
-                chat_id  = int(("-100" + chat_id))
-        elif info.forward_from_chat.type == enums.ChatType.CHANNEL:
-            last_msg_id = info.forward_from_message_id
-            chat_id = info.forward_from_chat.username or info.forward_from_chat.id
-        else:
-            return
-
-    await message.delete()
-    await msg.delete()
-    
     if message.from_user.id in ADMINS:      
         buttons = [
             [
                 InlineKeyboardButton('Yes',
-                                     callback_data=f'index#yes#{chat_id}#{last_msg_id}#{skip}')
+                                     callback_data=f'index#accept#{chat_id}#{last_msg_id}#{message.from_user.id}')
             ],
             [
                 InlineKeyboardButton('close', callback_data='close_data'),
