@@ -2592,13 +2592,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 query.message.id, 
                 InputMediaPhoto(random.choice(PICS))
             )
-        await query.message.edit_text(
+            await query.message.edit_text(
             text="▣ ▢ ▢"
         )
-        await query.message.edit_text(
+            await query.message.edit_text(
             text="▣ ▣ ▢"
         )
-        await query.message.edit_text(
+            await query.message.edit_text(
             text="▣ ▣ ▣"
         )
             reply_markup = InlineKeyboardMarkup(btn)
