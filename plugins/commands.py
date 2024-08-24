@@ -277,10 +277,6 @@ async def start(client, message):
                    
                      [
                         InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream),                  
-                     ],
-                        
-                     [
-                        InlineKeyboardButton("• ᴡᴀᴛᴄʜ ɪɴ ᴡᴇʙ ᴀᴘᴘ •", web_app=WebAppInfo(url=stream))  
                      ]
 
                     ]
@@ -477,10 +473,6 @@ async def start(client, message):
                    
                      [
                         InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream),                  
-                     ],
-                        
-                     [
-                        InlineKeyboardButton("• ᴡᴀᴛᴄʜ ɪɴ ᴡᴇʙ ᴀᴘᴘ •", web_app=WebAppInfo(url=stream))  
                      ]
 
                     ]
@@ -556,12 +548,8 @@ async def start(client, message):
                    
                      [
                         InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream),                  
-                     ],
-                        
-                     [
-                        InlineKeyboardButton("• ᴡᴀᴛᴄʜ ɪɴ ᴡᴇʙ ᴀᴘᴘ •", web_app=WebAppInfo(url=stream))  
                      ]
-
+                    
                     ]
             else:
                 button = [[
@@ -634,10 +622,6 @@ async def start(client, message):
                    
              [
                 InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream),                  
-             ],
-                        
-             [
-                InlineKeyboardButton("• ᴡᴀᴛᴄʜ ɪɴ ᴡᴇʙ ᴀᴘᴘ •", web_app=WebAppInfo(url=stream))  
              ]
 
             ]
