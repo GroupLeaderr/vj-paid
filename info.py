@@ -66,8 +66,8 @@ PAYMENT_TEXT = environ.get('PAYMENT_TEXT', '<b>- ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟ�
 OWNER_USERNAME = environ.get('OWNER_USERNAME', 'GroupLeaderr') # owner username without @
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+KfRHEjSu3Dk2ZmJl')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Sagar_Files')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+E0x9VQvJ2bMwNjM9')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/FILME_MAKER')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/HowToDownloadAll2023/49')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'GroupLeaderr') # Support Chat Link Without https:// or @
 
@@ -84,7 +84,7 @@ AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
-MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
+MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "False")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
