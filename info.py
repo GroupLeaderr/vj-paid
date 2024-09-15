@@ -67,7 +67,7 @@ OWNER_USERNAME = environ.get('OWNER_USERNAME', 'GroupLeaderr') # owner username 
 
 # Links
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+E0x9VQvJ2bMwNjM9')
-CHNL_LNK = environ.get('CHNL_LNK', 'FILME_MAKER')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+K5AB8XAedEsyNTBl')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/HowToDownloadAll2023/49')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'GroupLeaderr') # Support Chat Link Without https:// or @
 
