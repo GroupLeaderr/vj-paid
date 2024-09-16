@@ -212,10 +212,11 @@ Nᴀᴍᴇ - {}
 ʙᴏᴛ - <b>@Autofilter_v2bot</b>
 """
 
-    CAPTION = """<b><a href="https://t.me/Autofilter_v2bot">{file_name}
+    CAPTION = """<b>ꜰɪʟᴇɴᴀᴍᴇ : {file_name}
 
-sɪᴢᴇ : {file_size}
-Pʟᴇᴀsᴇ Fᴏʀᴡᴀʀᴅ Tʜɪs Fɪʟᴇ</a></b>""" 
+ꜱɪᴢᴇ : {file_size}
+
+ᴊᴏɪɴ ɴᴏᴡ ➠ <a href="https://t.me/FILME_MAKER">FILME_MAKER</a></b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
